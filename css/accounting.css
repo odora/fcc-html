@@ -1,0 +1,229 @@
+.content-panel2{
+    margin: 120px 60px 60px 345px;
+}
+
+.order-table{
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+
+.order-table-panel{
+    width: 105%;
+    margin-left: -5%;
+}
+
+.table-space-60{
+    margin-top: 30px;
+}
+
+.order-table table{
+    width: 100%;
+}
+
+.order-table table tr{
+    border-bottom: 1px solid #E7EAEF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.order-table table tr:hover{
+    box-shadow: 10px 0 10px 0 rgba(0,0,0,0.10);
+}
+
+.order-table-cross:nth-child(4n+2){
+    background: #F1F4FE;
+}
+
+.order-table table tr th{
+    height: 53px;
+    line-height: 53px;
+    font-size: 16px;
+    color: #3D5170;
+    text-align: center;
+}
+
+.order-table table tr th:first-child{
+    padding-left: 50px;
+}
+
+.order-table table tr td{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    color: #868E96;
+}
+
+/**根据需要调节宽度*/
+.order-table table tr td:nth-child(1){
+    width: 30%;
+}
+.order-table table tr td:nth-child(2){
+    width: 20%;
+}
+.order-table table tr td:nth-child(3){
+    width: 20%;
+}
+.order-table table tr td:nth-child(4){
+    width: 20%;
+}
+.order-table table tr td:nth-child(5){
+    width: 10%;
+}
+
+.order-table table tr td:first-child span{
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+}
+
+.order-table table tr td:first-child i{
+    margin-right: 16px;
+}
+
+.order-table-data{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 15px;
+    display: none;
+}
+
+.order-table-data table{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 1%;
+}
+
+.order-table-data table tr{
+    border: 0px;
+    height: 30px;
+}
+
+.order-table-data table tr th,
+.order-table-data table tr th:first-child{
+    height: 46px;
+    color: #3D5170;
+    padding-left: 0px;
+}
+
+.order-table-data table tr td:last-child{
+    color: #00A0E9;
+}
+
+.order-table-data table tr:hover{
+    box-shadow: 0px 0 0px 0 rgba(0,0,0,0.10);
+}
+
+.page-nation{
+    width: 50%;
+    margin: 26px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-nation ul{
+    list-style-type: none;
+    font-size: 16px;
+    color: #CACEDB;
+}
+
+.page-nation ul li{
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    min-width: 36px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #CACEDB;
+    cursor: pointer;
+}
+
+.page-nation ul li:hover{
+    background-color: #00A0E9;
+    color: #FFFFFF;
+}
+
+.page-chg{
+    padding: 0px 25px !important;
+    line-height: 36px;
+}
+
+.page-cur{
+    border: 0px solid #CACEDB !important;
+    color: #00A0E9;
+}
+
+.left-from{
+    position: fixed;
+    top:404px;
+    left: 0px;
+    width: 285px;
+    padding-left: 28px;
+    padding-right: 57px;
+    z-index: 1105;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.left-from-title{
+    font-size: 18px;
+    color: #00A0E9;
+}
+
+.am-icon-search{
+    color:  #CCCCCC;
+}
+
+.am-checkbox{
+    font-size: 18px;
+    color: #5A6169;
+}
+
+
+/**手机端调整*/
+@media only screen and (max-width: 1300px){
+    .order-table .order-table-panel{
+        overflow: scroll;
+        margin-left: -2%;
+    }
+
+    .order-table-panel table{
+        min-width: 850px;
+    }
+
+    .order-table table tr td:first-child i{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .page-nation{
+        width: 100%;
+    }
+
+    .page-nation ul{
+        font-size: 14px;
+    }
+
+    .page-nation ul li {
+        margin-right: 2px;
+        height: 23px;
+        line-height: 23px;
+        min-width: 23px;
+        padding: 0px;
+    }
+
+    .page-chg {
+        padding: 0px 5px !important;
+        line-height: 20px;
+    }
+
+}

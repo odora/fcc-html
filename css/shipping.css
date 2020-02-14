@@ -1,0 +1,251 @@
+.content-panel2{
+    margin: 120px 60px 60px 345px;
+}
+
+.shipping-table{
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+
+.shipping-table-panel{
+    width: 107%;
+    margin-left: -7%;
+}
+
+.table-space-60{
+    margin-top: 30px;
+}
+
+.shipping-table table{
+    width: 100%;
+}
+
+.shipping-table table tr{
+    border-bottom: 1px solid #E7EAEF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.shipping-table table tr:hover{
+    box-shadow: 10px 0 10px 0 rgba(0,0,0,0.10);
+}
+
+.shipping-table-cross:nth-child(4n+2){
+    background: #F1F4FE;
+}
+
+.shipping-table table tr th{
+    height: 53px;
+    line-height: 53px;
+    font-size: 16px;
+    color: #3D5170;
+    text-align: center;
+}
+
+.shipping-table table tr td{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    color: #868E96;
+}
+.shipping-table table tr td a{
+    text-decoration:underline;
+    color: #00A0E9;
+}
+
+.shipping-table table tr th:first-child{
+    padding-left: 50px;
+}
+
+/**根据需要调节宽度*/
+.shipping-table table tr td:nth-child(1){
+    width: 25%;
+}
+.shipping-table table tr td:nth-child(2){
+    width: 50%;
+}
+.shipping-table table tr td:nth-child(3){
+    width: 25%;
+}
+
+.shipping-table table tr td:first-child span{
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+}
+
+.shipping-table table tr td:first-child i{
+    margin-right: 16px;
+}
+
+.shipping-table-data{
+    background-color: #FFFFFF;
+    margin: 15px;
+    display: none;
+}
+
+.shipping-table-data table{
+    text-align: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+.shipping-table-data table tr{
+    border: 0px;
+    height: 30px;
+}
+
+.shipping-table-data table tr th{
+    height: 46px;
+    color: #3D5170;
+    padding-left: 0px;
+}
+
+.shipping-table-data table tr th:first-child{
+    padding-left: 3%;
+}
+
+.shipping-table-data table tr td:nth-child(1){
+    width: 25%;
+    padding-left: 4%;
+}
+.shipping-table-data table tr td:nth-child(2){
+    width: 20%;
+    color: #868E96;
+}
+.shipping-table-data table tr td:nth-child(4){
+    width: 25%;
+    color: #00A0E9;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.shipping-table-data table tr td:last-child a{
+    width: 40%;
+}
+
+.shipping-table-data table tr td:last-child a:last-child{
+    margin-left: 5%;
+}
+
+.shipping-table-data table tr:hover{
+    box-shadow: 0px 0 0px 0 rgba(0,0,0,0.10);
+}
+
+.page-nation{
+    width: 50%;
+    margin: 26px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-nation ul{
+    list-style-type: none;
+    font-size: 16px;
+    color: #CACEDB;
+}
+
+.page-nation ul li{
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    min-width: 36px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #CACEDB;
+    cursor: pointer;
+}
+
+.page-nation ul li:hover{
+    background-color: #00A0E9;
+    color: #FFFFFF;
+}
+
+.page-chg{
+    padding: 0px 25px !important;
+    line-height: 36px;
+}
+
+.page-cur{
+    border: 0px solid #CACEDB !important;
+    color: #00A0E9;
+}
+
+.left-from{
+    position: fixed;
+    top:404px;
+    left: 0px;
+    width: 285px;
+    padding-left: 28px;
+    padding-right: 57px;
+    z-index: 1105;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.left-from-title{
+    font-size: 18px;
+    color: #00A0E9;
+}
+
+.am-icon-search{
+    color:  #CCCCCC;
+}
+
+.am-checkbox{
+    font-size: 18px;
+    color: #5A6169;
+}
+
+/**手机端调整*/
+@media only screen and (max-width: 1300px){
+
+    .shipping-table .shipping-table-panel{
+        overflow: scroll;
+    }
+
+    .shipping-table-panel table{
+        min-width: 850px;
+    }
+
+    .shipping-table table tr td:first-child i{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .page-nation{
+        width: 100%;
+    }
+
+    .page-nation ul{
+        font-size: 14px;
+    }
+
+    .page-nation ul li {
+        margin-right: 2px;
+        height: 23px;
+        line-height: 23px;
+        min-width: 23px;
+        padding: 0px;
+    }
+
+    .page-chg {
+        padding: 0px 5px !important;
+        line-height: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 600px){
+
+}

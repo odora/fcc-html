@@ -1,0 +1,266 @@
+.content-panel2{
+    position: relative;
+    margin: 85px 60px 270px 345px;
+}
+
+.product-info{
+    margin-top: 16px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.product-info-entry{
+    border-top: 1px solid #E7EAEF;
+    padding: 20px 0px 0px 26px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.product-info-entry-left{
+    width: 450px;
+}
+
+.product-info-entry-left-title{
+    height: 33px;
+    line-height: 33px;
+    font-size: 24px;
+    color: #5A6169;
+}
+
+.product-info-entry-left-title2{
+    margin-top: 16px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5A6169;
+}
+
+.product-info-entry-left-title2 span:last-child{
+    margin-left: 36px;
+}
+
+.product-info-entry-left-img{
+    width: 382px;
+    height: 182px;
+    float: right;
+}
+
+.product-info-entry-left-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-info-entry-left-bottom{
+    clear: right;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.product-info-entry-left-bottom > span{
+    color: #5A6169;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    color: #A5A7B0;
+    font-size: 14px;
+    padding:0px 0px 28px 0px;
+}
+
+ul li{
+    height: 20px;
+    line-height: 20px;
+}
+
+.product-info-entry-center{
+    margin-top: 12px;
+    padding-left: 140px;
+}
+
+.product-info-entry-right{
+    margin-top: 12px;
+    padding-left: 77px;
+    margin-left: 150px;
+    border-left: 1px solid #CACEDB;
+    margin-bottom: 28px;
+}
+
+.product-info-entry table{
+    font-size: 14px;
+    color: #868E96;
+}
+
+.span-blue{
+    color: #00A0E9;
+}
+
+.span-black{
+    color: #00002D;
+}
+
+.span-color{
+    width: 32px;
+    height: 20px;
+    background-color: #EE6723;
+    border: 1px solid #EE6723;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.product-info-entry table tr td{
+    height: 28px;
+    vertical-align: top;
+}
+
+.product-info-group{
+    background-color: #F1F4FE;
+    color: #5A6169;
+    padding-left: 82px;
+    padding-top: 22px;
+    padding-bottom: 26px;
+    overflow: hidden;
+}
+
+.product-info-group-title1{
+    font-size: 18px;
+    margin-right: 53px;
+}
+
+.product-info-group-title2{
+    font-size: 14px;
+}
+
+.product-info-group-left{
+    width: 50%;
+}
+
+.product-info-group-left table{
+    width: 100%;
+    margin-top: 18px;
+    margin-left: -9%;
+}
+.product-info-group-left table tr td{
+    height: 30px;
+    text-align: center;
+}
+
+.product-info-group-right{
+    margin-top: 35px;
+    width: 50%;
+    padding-right: 5%;
+}
+
+.product-info-group-right table{
+    width: 100%;
+    font-size: 14px;
+}
+
+.product-info-group-right table tr{
+    height: 20px;
+    text-align: center;
+}
+
+.product-info-group-right table tr:last-child{
+    border-top: 1px dashed #CACEDB;
+}
+
+.product-info-group-right table tr td{
+    height: 20px;
+    text-align: center;
+}
+
+.product-info-group-order{
+    width: 100%;
+    padding-right: 29px;
+    padding-bottom: 22px;
+    background-color: #FFFFFF;
+    text-align: right;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.product-info-group-order span{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #5A6169;
+    display: inline-block;
+}
+
+.product-info-btn{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.product-info-btn button{
+    width: 230px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius:0px;
+}
+
+.product-info-btn button:first-child{
+    background: #3D5170;
+    border-color: #3D5170;
+}
+
+.product-info-btn button:first-child:hover,
+.product-info-btn button:first-child:focus {
+    background-color:#2A4270;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1300px){
+    .product-info-entry-left {
+        width: 100%;
+    }
+
+    .product-info-entry-left-img {
+        width: 100%;
+        height: auto;
+    }
+
+    ul li{
+        height: auto;
+        line-height: normal;
+    }
+
+    .product-info-entry-left-title {
+        height: 15px;
+        line-height: 15px;
+        font-size: 15px;
+    }
+
+    .product-info-entry-center{
+        padding: 0 5px 0 0;
+    }
+
+    .product-info-entry-right{
+        margin-left: 0;
+        padding: 0;
+        border-left: 0px solid #CACEDB;
+    }
+
+    .product-info-group{
+        padding-left: 10px;
+    }
+
+    .product-info-group-left,
+    .product-info-group-right{
+        width: 100%;
+    }
+
+    .product-info-group-left table{
+        margin: 0;
+    }
+
+    .product-info-btn{
+        margin: 20px 0;
+    }
+
+    .product-info-btn button{
+        width: 45%;
+    }
+
+}

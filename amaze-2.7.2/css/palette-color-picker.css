@@ -1,0 +1,108 @@
+.palette-color-picker-button {
+    /**
+    position: relative;
+    display: inline-block;
+    */
+}
+
+.palette-color-picker-bubble {
+    margin: -20px -330px;
+    bottom: 100%;
+    width: 325px;
+    background-color: #fff;
+}
+
+.palette-color-picker-bubble:after, .palette-color-picker-bubble:before {
+    top: 100%;
+    left: 14px;
+    /**border: solid transparent;*/
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.palette-color-picker-bubble:after {
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+.palette-color-picker-bubble.downside {
+    bottom: auto;
+    top: 100%;
+}
+
+.palette-color-picker-bubble.downside:after, .palette-color-picker-bubble.downside:before {
+    top: auto;
+    bottom: 100%;
+}
+
+.palette-color-picker-bubble.downside:after {
+    border-top-color: transparent;
+    border-bottom-color: #fff;
+}
+
+.palette-color-picker-bubble.downside:before {
+    border-top-color: transparent;
+    border-bottom-color: #bbb;
+}
+
+.palette-color-picker-bubble .swatch {
+    position: relative;
+    display: inline-block;
+    font: 0/0 a;
+    width: 8%;
+    padding-top: 5%;
+    margin: 0.5% 0.5%;
+    border: 1px solid #ADADAD;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.palette-color-picker-bubble .swatch.active {
+    outline-color: #000;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.palette-color-picker-bubble .swatch.clear {
+    background-color: #fff;
+    display: none;
+}
+
+.palette-color-picker-bubble .swatch.clear:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -1px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #e00;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+}
+
+.palette-color-picker-bubble.double .swatch {
+    width: 29.30%;
+    padding-top: 11.00%;
+    margin: 1% 2%;
+}
+
+.palette-color-picker-bubble.double .swatch.clear:before {
+    transform: rotate(22.5deg);
+}
+
+.palette-color-picker-bubble.wide .swatch {
+    width: 96.2%;
+    padding-top: 11.00%;
+    margin: 1% 2%;
+}
+
+.palette-color-picker-bubble.wide .swatch.clear {
+    width: 12.66%;
+}

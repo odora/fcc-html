@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>catalogs</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="amaze-2.7.2/css/amazeui.css">
+    <link rel="stylesheet" href="amaze-2.7.2/css/palette-color-picker.css">
+    <link rel="stylesheet" href="layui-v2.5.5/css/layui.css">
+    <link rel="stylesheet" href="css/catalogs2_add.css">
+    <link rel="stylesheet" href="amaze-2.7.2/css/app.css">
+</head>
+<body>
+<header>
+    <div class="header-fluid">
+        <div class="am-fl header-switch-button am-icon-list">
+            <span></span>
+        </div>
+        <div class="am-fl header-msg-left">Welcome,BLK SPORTS!</div>
+        <div class="am-fr header-logout">
+            LOG OUT
+        </div>
+        <div class="am-fr header-msg-right">
+            Your Account manager: SUN FAN Email:
+            <a href="https://frank@fancysportsgear.com">frank@fancysportsgear.com</a>
+        </div>
+    </div>
+</header>
+<div class="left-sidebar">
+    <!-- logo -->
+    <div class="am-fl header-logo">
+        <a href="javascript:;"><img src="img/logo.png" alt=""></a>
+    </div>
+    <!-- 菜单 -->
+    <ul class="sidebar-nav">
+        <li class="sidebar-nav-link">
+            <a href="home.html">
+                <i class="ico-li-home"></i>
+                <span>HOME</span>
+            </a>
+        </li>
+        <li class="sidebar-nav-link">
+            <a href="catalogs.html">
+                <i class="ico-li-catalog-active"></i>
+                <span>CATALOG</span>
+            </a>
+        </li>
+        <li class="sidebar-nav-link">
+            <a href="order.html">
+                <i class="ico-li-order"></i>
+                <span>ORDERS</span>
+            </a>
+        </li>
+        <li class="sidebar-nav-link">
+            <a href="shipping.html">
+                <i class="ico-li-shipping"></i>
+                <span>SHIPPING</span>
+            </a>
+        </li>
+        <li class="sidebar-nav-link">
+            <a href="accounting.html">
+                <i class="ico-li-accounting"></i>
+                <span>ACCOUNTING</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="content-panel2">
+    <div class="backto">
+        <div class="am-fl backto-left">
+            <i class="ico-li-right"></i>
+            <span class="backto-title">Back to list</span>
+        </div>
+        <!--时间轴模块-->
+        <div class="am-fr backto-right">
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis-over"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">Design</div>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">Roster</div>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">Order Info</div>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">Intemal</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="nav-panel">
+            <span class="nav-panel-span">Catalog</span>
+            <i class="ico-li-right"></i>
+            <span class="nav-panel-span-cur">Order Entry</span>
+        </div>
+        <div class="product-info-entry">
+            <div class="am-fl product-info-entry-left">
+                <div class="product-info-entry-left-title">LQ-篮球/ 测试服装</div>
+                <div class="product-info-entry-left-top">
+                    <span>SKU: <t>123456789</t></span>
+                    <span>Part #: <t>123456789</t></span>
+                </div>
+                <div class="product-info-entry-left-choose">
+                    <a>Choose another product</a>
+                </div>
+                <div class="product-info-entry-left-img">
+                    <img id="uploadView" src="img/info-3-add.png">
+                </div>
+                <div class="product-info-entry-left-upload">
+                    <div class="left-upload-group">
+                        <button id="upload1" class="am-btn am-btn-secondary">Upload Artworks</button>
+                        <table id="upload1List"></table>
+                    </div>
+                    <div class="left-upload-group">
+                        <button id="upload2" class="am-btn am-btn-secondary">Upload a Preview Image</button>
+                    </div>
+                </div>
+            </div>
+            <div class="am-fl product-info-entry-right">
+                <div class="product-info-entry-right-bottom">
+                    <span class="title">
+                        Product Information:
+                    </span>
+                    <div class="infor-model">
+                        <div class="infor-model-group">
+                            <span class="title2">Body : </span>
+                            <span class="desc">AAA Fabric(fabric name use bold text)</span>
+                        </div>
+                        <div class="infor-model-group">
+                            <span class="title2">Neck : </span>
+                            <span class="desc">BBB Fabric(fabric name use bold text)</span>
+                        </div>
+                        <div class="infor-model-group">
+                            <span class="title2">Sleeve : </span>
+                            <span class="desc">CCC Fabric(fabric name use bold text)</span>
+                        </div>
+                        <div class="infor-model-group">
+                            <span class="title2">Body 2 : </span>
+                            <span class="desc">DDD Fabric(fabric name use bold text)</span>
+                        </div>
+                    </div>
+                    <span class="title">
+                        Custom Options:
+                    </span>
+                    <div class="infor-model">
+                        <div class="custom-group">
+                            <div class="am-fl">
+                                <img src="img/info-5.png">
+                            </div>
+                            <div class="am-fl">
+                                <div class="color-title">BLK wire</div>
+                                <div class="color-panel">
+                                    <div class="sure-color">
+                                        <div class="show-color1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-group">
+                            <div class="am-fl">
+                                <img src="img/info-6.png">
+                            </div>
+                            <div class="am-fl">
+                                <div class="color-title">BLK Plastic Bag</div>
+                                <div class="color-panel">
+                                    <div class="sure-color">
+                                        <div class="show-color2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-group">
+                            <div class="am-fl">
+                                <img src="img/info-7.png">
+                            </div>
+                            <div class="am-fl">
+                                <div class="color-title">BLK Botton</div>
+                                <div class="color-panel">
+                                    <div class="sure-color">
+                                        <div class="show-color3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-next">
+            <button id="nextStep" type="button" class="am-btn am-btn-secondary">NEXT</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="amaze-2.7.2/js/palette-color-picker.js"></script>
+<script src="amaze-2.7.2/js/app.js"></script>
+<script src="layui-v2.5.5/layui.all.js"></script>
+<script>
+    $(function(){
+        colorTool();
+        init();
+    })
+
+    function init(){
+        let upload = layui.upload;
+        //多文件列表示例
+        let upload1View = $('#upload1List');
+        let upload1Ins = upload.render({
+            elem: '#upload1',
+            url: '/upload/',
+            accept: 'file',
+            multiple: true,
+            auto: false,
+            bindAction: '#nextStep',
+            choose: function(obj){
+                var files = this.files = obj.pushFile();
+                //读取本地文件
+                obj.preview(function(index, file, result){
+                    var tr = $(['<tr id="upload-'+ index +'">',
+                        '<td><span class="upload-delete">&times;</span></td>',
+                        '<td style="text-decoration: underline;">'+ file.name +'</td>',
+                        '</tr>'].join(''));
+
+                    //删除
+                    tr.find('.upload-delete').on('click', function(){
+                        delete files[index];
+                        tr.remove();
+                        upload1Ins.config.elem.next()[0].value = '';
+                    });
+
+                    upload1View.append(tr);
+                });
+            },
+            done: function(res, index, upload){
+
+            }
+        });
+
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#upload2'
+            ,url: '/upload/'
+            ,before: function(obj){
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#uploadView').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,done: function(res){
+                //如果上传失败
+                if(res.code > 0){
+                    return layer.msg('上传失败');
+                }
+                //上传成功
+            }
+            ,error: function(){
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });
+            }
+        });
+
+    }
+
+    function colorTool(){
+        $('.show-color1').paletteColorPicker({
+            colors: [
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"divider": "#B6B6B6"}
+            ],
+            position: 'upside', // default -> 'upside'
+        });
+        $('.show-color2').paletteColorPicker({
+            colors: [
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"divider": "#B6B6B6"}
+            ],
+            position: 'upside', // default -> 'upside'
+        });
+        $('.show-color3').paletteColorPicker({
+            colors: [
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"primary_yel": "#FFAB40"},
+                {"primary": "#FFD600"},
+                {"divider": "#B6B6B6"}
+            ],
+            position: 'upside', // default -> 'upside'
+        });
+
+    }
+
+</script>
+</html>
