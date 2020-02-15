@@ -585,7 +585,7 @@
             <div class="block4-body">
                 <ul>
                     <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);"></div>
+                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
                         <div class="info">
                             <textarea rows="4"></textarea>
                             <div class="actions">
@@ -599,7 +599,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);"></div>
+                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
                         <div class="info">
                             <div class="approve-time">
                                 <i class="am-icon-close"></i>&nbsp;Rejected 18-Apr-2019
@@ -610,7 +610,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);"></div>
+                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
                         <div class="info">
                             <div class="approve-time">
                                 <i class="am-icon-check"></i>&nbsp;Approved 18-Apr-2019
@@ -625,8 +625,50 @@
         </div>
     </div>
 </div>
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="approval-upload">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd"><a href="javascript:;" class="am-close am-close-spin" data-am-modal-close>&times;</a></div>
+        <div class="am-modal-bd">
+            <div class="approval-upload">
+                <div class="img-view">
+                    <img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png">
+                </div>
+                <div class="img-list">
+                    <ul>
+                        <li class="active"><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                        <li><img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-14-22-18-25/%E8%A3%81%E7%89%87%E7%99%BD%E6%9D%BF%E5%9B%BE.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <script src="js/jquery.min.js"></script>
+<script src="amaze-2.7.2/js/amazeui.min.js"></script>
 <script src="amaze-2.7.2/js/palette-color-picker.js"></script>
 <script src="amaze-2.7.2/js/app.js"></script>
+<script>
+function showDialog() {
+    $('#approval-upload').modal()
+}
+</script>
 </html>

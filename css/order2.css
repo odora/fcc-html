@@ -252,6 +252,7 @@ table.summary tfoot tr:last-child td {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .sample-approval textarea {
     margin: 0 10px 10px 0;
@@ -303,4 +304,44 @@ table.summary tfoot tr:last-child td {
 }
 .color-block .color-info {
     display: inline-block;
+}
+
+.am-modal-dialog {
+    width: 800px !important;
+}
+.approval-upload {
+    display: flex;
+    width: 100%;
+}
+.approval-upload .img-view {
+    width: 360px;
+    height: 480px;
+    flex-shrink: 0;
+    margin-right: 4px;
+}
+.approval-upload .img-view img,
+.approval-upload .img-list img {
+    max-width: 100%;
+    height: auto;
+    max-height: 480px;
+}
+.approval-upload .img-list ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    height: 600px;
+    overflow-y: auto;
+}
+.approval-upload .img-list li {
+    margin-right:10px;
+    margin-bottom: 4px;
+}
+.approval-upload .img-list li img {
+    height: 120px;
+    width: auto;
+    max-width: 320px;
+}
+.approval-upload .img-list li.active img {
+    border: 1px solid red;
 }
