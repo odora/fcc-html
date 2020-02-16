@@ -25,6 +25,7 @@
     <meta name="msapplication-TileColor" content="#0e90d2">
     <link rel="stylesheet" href="amaze-2.7.2/css/amazeui.css">
     <link rel="stylesheet" href="amaze-2.7.2/css/palette-color-picker.css">
+    <link rel="stylesheet" href="popover/jquery.webui-popover.min.css">
     <link rel="stylesheet" href="amaze-2.7.2/css/app.css">
     <link rel="stylesheet" href="css/order2.css">
 </head>
@@ -91,9 +92,35 @@
     <div class="block4">
         <!-- Order Info -->
         <div class="order-info">
-            <div class="block4-title">Order Info</div>
+            <div class="block4-title">Order Details</div>
             <div class="block4-body">
                 <div class="part-one">
+                    <h3>Status</h3>
+                    <dl class="time-line">
+                        <dd>
+                            <ul>
+                                <li class="done">
+                                    Order received, 2020-02-14
+                                </li>
+                                <li class="done">
+                                    Payment received, 2020-02-14
+                                </li>
+                                <li class="will">
+                                    Sample approved
+                                </li>
+                                <li class="will">
+                                    Bulk production
+                                </li>
+                                <li class="will">
+                                    Finish packing
+                                </li>
+                                <li class="will">
+                                    Despaching
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+
                     <h3>Order Info</h3>
                     <dl>
                         <dt>CSR:</dt>
@@ -108,102 +135,29 @@
                         <dd>111</dd>
                     </dl>
                     <dl>
-                        <dt>Name Sum:</dt>
-                        <dd>0</dd>
-                    </dl>
-                    <dl>
-                        <dt>Number Sum:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
                         <dt>Original Order Number if This Is a Repeat Order:</dt>
                         <dd>111</dd>
                     </dl>
                     <dl>
-                        <dt>Delivery Date:</dt>
+                        <dt>Shipping Date:</dt>
                         <dd>2020-02-04</dd>
                     </dl>
                     <dl>
                         <dt>Customer Notes:</dt>
                         <dd>1111</dd>
                     </dl>
-                    <h3>Delivery Info</h3>
-                    <dl>
-                        <dt>Company/School name:</dt>
-                        <dd>1</dd>
+                    <h3>Shipping Address & Method</h3>
+                    <dl class="address">
+                        <dd>Frank Sun<br>Fancy Sports JiaShan<br>188 YingChun Road</dd>
+                        <dd>JiaShan<br>ZheJiang<br>200001<br>China</dd>
+                        <dd>1234567890</dd>
                     </dl>
-                    <dl>
-                        <dt>Contant:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>Street:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>City:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>State:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>Zip code:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>Country:</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>Tel:</dt>
-                        <dd>12345678</dd>
-                    </dl>
-                </div>
-                <div class="part-two">
-                    <dl>
-                        <dt></dt>
-                        <dd class="img-view">
-                            <img src="img/info-3.png">
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Status</dt>
-                        <dd class="time-line">
-                            <ul>
-                                <li class="done">
-                                    Order received, 2020-02-14
-                                </li>
-                                <li class="done">
-                                    Payment received, 2020-02-14
-                                </li>
-                                <li class="will">
-                                    Sample approved
-                                    <div class="tl-img">
-                                        <img src="img/info.png">
-                                        <img src="img/info.png">
-                                    </div>
-                                </li>
-                                <li class="will">
-                                    Bulk production
-                                </li>
-                                <li class="will">
-                                    Finish packing
-                                </li>
-                                <li class="will">
-                                    Despaching
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <h3>Shipping Cost</h3>
                     <dl>
                         <dt>Payor:</dt>
                         <dd>Feight collect</dd>
                     </dl>
                     <dl>
-                        <dt>Shipping method:</dt>
+                        <dt>Shipping Method:</dt>
                         <dd>DHL</dd>
                     </dl>
                     <dl>
@@ -211,369 +165,259 @@
                         <dd>10000000</dd>
                     </dl>
                     <dl>
-                        <dt>Tariff A/C No</dt>
+                        <dt>Tariff A/C No:</dt>
                         <dd></dd>
                     </dl>
                 </div>
-            </div>
-        </div>
+                <div class="part-two">
+                    <h3>Item</h3>
+                    <div class="item-info">
+                        <div class="item-sheet">
+                            <dl>
+                                <dd>Basketball/Basketball short<br>Male</dd>
+                            </dl>
+                            <dl>
+                                <dt>BOM #:</dt>
+                                <dd>TEXT0001</dd>
+                            </dl>
+                            <dl>
+                                <dt>Part #:</dt>
+                                <dd>1234567890</dd>
+                            </dl>
+                        </div>
+                        <div class="item-image" style="background-image: url(http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-01-19-46-14/white.jpg);"></div>
+                        <div class="item-links">
+                            <a href="#">Attachment 1.pdf</a>
+                            <a href="#">Attachment 2.pdf</a>
+                            <a href="#">Attachment 3.pdf</a>
+                            <a href="#">Attachment 4.pdf</a>
+                        </div>
+                    </div>
 
-        <!-- Pattern Material -->
-        <div class="pattern-info">
-            <div class="block4-title">Pattern Material</div>
-            <div class="block4-body">
-                <div class="part-one">
-                    <dl>
-                        <dt>Pattern Info:</dt>
-                        <dd>Basketball/Basketball short</dd>
-                    </dl>
-                    <dl>
-                        <dt>BOM No</dt>
-                        <dd>TEXT0001</dd>
-                    </dl>
-                    <dl>
-                        <dt>Part #</dt>
-                        <dd></dd>
-                    </dl>
-                    <h3>Product Information</h3>
+                    <h3>Break Down & Custom Option</h3>
+                    <section data-am-widget="accordion" class="am-accordion am-accordion-basic" data-am-accordion='{}'>
+                        <dl class="am-accordion-item">
+                            <dt class="am-accordion-title table-title">
+                                <span>Group 1</span>
+                                <span>Group Name</span>
+                                <span>Count 30</span>
+                            </dt>
+                            <dd class="am-accordion-bd am-collapse">
+                                <dl class="one-line">
+                                    <dt>Poly Bag:</dt>
+                                    <dd>plastic bag / BSN SPORTS 280mm*400mm BSN <strong>(Black)</strong></dd>
+                                </dl>
+                                <dl class="one-line">
+                                    <dt>WAIST:</dt>
+                                    <dd>shoelace/pants drawstring 1400mm FSG <strong>(White)</strong></dd>
+                                </dl>
+                                <table>
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="26%">
+                                        <col width="16%">
+                                        <col width="10%">
+                                        <col width="22%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Player name</th>
+                                            <th>Number</th>
+                                            <th>QTY</th>
+                                            <th>Unit price</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="am-accordion-item">
+                            <dt class="am-accordion-title table-title">
+                                <span>Group 2</span>
+                                <span>Group Name</span>
+                                <span>Count 30</span>
+                            </dt>   
+                            <dd class="am-accordion-bd am-collapse">
+                                <dl class="one-line">
+                                    <dt>Poly Bag:</dt>
+                                    <dd>plastic bag / BSN SPORTS 280mm*400mm BSN <strong>(Black)</strong></dd>
+                                </dl>
+                                <dl class="one-line">
+                                    <dt>WAIST:</dt>
+                                    <dd>shoelace/pants drawstring 1400mm FSG <strong>(White)</strong></dd>
+                                </dl>
+                                <table>
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="26%">
+                                        <col width="16%">
+                                        <col width="10%">
+                                        <col width="22%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Player name</th>
+                                            <th>Number</th>
+                                            <th>QTY</th>
+                                            <th>Unit price</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>FRANK</td>
+                                            <td>19</td>
+                                            <td>1</td>
+                                            <td>$ 10.00</td>
+                                            <td>$ 10.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                    </section>
+                    <div class="table-wrap">
+                        <div class="summary-title">
+                            Summary
+                        </div>
+                        <table class="summary">
+                            <colgroup>
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>QTY</th>
+                                    <th>Unit price</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>S</td>
+                                    <td>3</td>
+                                    <td>$ 10.00</td>
+                                    <td>$ 30.00</td>
+                                </tr>
+                                <tr>
+                                    <td>L</td>
+                                    <td>2</td>
+                                    <td>$ 10.00</td>
+                                    <td>$ 20.00</td>
+                                </tr>
+                                <tr>
+                                    <td>XL</td>
+                                    <td>1</td>
+                                    <td>$ 10.00</td>
+                                    <td>$ 10.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Play name</td>
+                                    <td>6</td>
+                                    <td>$ 0.50</td>
+                                    <td>$ 3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>6</td>
+                                    <td>$ 0.50</td>
+                                    <td>$ 3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Size fee</td>
+                                    <td>3</td>
+                                    <td>$ 5.00</td>
+                                    <td>$ 15.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Rush fee</td>
+                                    <td>6</td>
+                                    <td>$ 3.00</td>
+                                    <td>$ 18.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Total:</td>
+                                    <td>6 items</td>
+                                    <td>$ 99.00</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <h3>Materials</h3>
                     <dl>
                         <dt>Body:</dt>
                         <dd>woven fabric 140g/ 4way woven 1450mm FSG</dd>
                     </dl>
                     <dl>
                         <dt>Side Panel:</dt>
-                        <dd>knitted fabric/ 200g milk mesh 1600mm FSG</dd>
+                        <dd>knitted fabric 200g/ milk mesh 1600mm FSG</dd>
                     </dl>
-                </div>
-                <div class="part-two">
-                    <dl>
-                        <dt></dt>
-                        <dd class="img-view">
-                            <img src="http://220.189.252.6:8012/sapPath/%E6%A8%A1%E6%9D%BF%E7%BA%BF%E6%A1%86%E5%9B%BE6.jpg">
-                            <img src="http://220.189.252.6:8012/sapPath/Upload/Img/2020-02-01-19-46-14/white.jpg">
-                        </dd>
-                    </dl>
-                </div>
 
-                <h3>Custom Options</h3>
-                <ul class="accessory-list">
-                    <li>
-                        <div class="thumb" style="background-image: url(http://220.189.252.6:8012/sapPath/BSN4.5CM%E9%98%B2%E6%BB%91%E6%A9%A1%E7%AD%8B1.jpg);"></div>
-                        <div class="info">
-                            WAIST:anti-slip elastic band/BSN SPORTS 45mm BSN
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(http://220.189.252.6:8012/sapPath/%E6%B0%B4%E6%B4%97%E5%94%9B.jpg);"></div>
-                        <div class="info">
-                            WAIST:care label /FSG mexico FSG
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(http://220.189.252.6:8012/sapPath/BSN%E5%8C%85%E8%A3%85%E8%A2%8B.jpg);"></div>
-                        <div class="info">
-                            Poly Bag:plastic bag / BSN SPORTS 280mm*400mm BSN
-                            <div class="color-panel">
-                                <div class="sure-color">
-                                    <div class="palette-color-picker-button">
-                                        <div class="palette-color-picker-bubble downside">
-                                            <div class="color-block">
-                                                <span class="swatch active" style="background-color: rgb(0, 0, 0);"></span>
-                                                <span class="color-name">black</span>
-                                            </div>
-                                            <div class="color-block">
-                                                <span class="swatch" style="background-color: rgb(255, 255, 255);"></span>
-                                                <span class="color-name">white</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(http://220.189.252.6:8012/sapPath/%E8%A3%A4%E7%BB%B3%201400mm.jpg);"></div>
-                        <div class="info">
-                            WAIST:shoelace/pants drawstring 1400mm FSG
-                            <div class="color-panel">
-                                <div class="sure-color">
-                                    <div class="palette-color-picker-button">
-                                        <div class="palette-color-picker-bubble downside">
-                                            <div class="color-block">
-                                                <span class="swatch" style="background-color: rgb(0, 0, 0);"></span>
-                                                <span class="color-name">black</span>
-                                            </div>
-                                            <div class="color-block">
-                                                <span class="swatch active" style="background-color: rgb(255, 255, 255);"></span>
-                                                <span class="color-name">white</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(http://220.189.252.6:8012/sapPath/BSN%20S2.jpg);"></div>
-                        <div class="info">
-                            Center of back waist:woven label/BSN (S) BSN
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Break down -->
-        <div class="break-down">
-            <div class="block4-title">Break down</div>
-            <div class="block4-body">
-                <div class="table-wrap">
-                    <div class="table-title">
-                        <span>Group 1</span>
-                        <span>Count 30</span>
-                    </div>
-                    <table>
-                        <colgroup>
-                            <col width="10%">
-                            <col width="26%">
-                            <col width="16%">
-                            <col width="10%">
-                            <col width="22%">
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>Size</th>
-                                <th>Player name</th>
-                                <th>Number</th>
-                                <th>QTY</th>
-                                <th>Unit price</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrap">
-                    <div class="table-title">
-                        <span>Group 2</span>
-                        <span>Count 3</span>
-                    </div>
-                    <table>
-                        <colgroup>
-                            <col width="10%">
-                            <col width="26%">
-                            <col width="16%">
-                            <col width="10%">
-                            <col width="22%">
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>Size</th>
-                                <th>Player name</th>
-                                <th>Number</th>
-                                <th>QTY</th>
-                                <th>Unit price</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>FRANK</td>
-                                <td>19</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrap">
-                    <div class="summary-title">
-                        Summary
-                    </div>
-                    <table class="summary">
-                        <colgroup>
-                            <col width="25%">
-                            <col width="25%">
-                            <col width="25%">
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>Size</th>
-                                <th>QTY</th>
-                                <th>Unit price</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>S</td>
-                                <td>3</td>
-                                <td>$ 10.00</td>
-                                <td>$ 30.00</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>2</td>
-                                <td>$ 10.00</td>
-                                <td>$ 20.00</td>
-                            </tr>
-                            <tr>
-                                <td>XL</td>
-                                <td>1</td>
-                                <td>$ 10.00</td>
-                                <td>$ 10.00</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Play name</td>
-                                <td>6</td>
-                                <td>$ 0.50</td>
-                                <td>$ 3.00</td>
-                            </tr>
-                            <tr>
-                                <td>Number</td>
-                                <td>6</td>
-                                <td>$ 0.50</td>
-                                <td>$ 3.00</td>
-                            </tr>
-                            <tr>
-                                <td>Size fee</td>
-                                <td>3</td>
-                                <td>$ 5.00</td>
-                                <td>$ 15.00</td>
-                            </tr>
-                            <tr>
-                                <td>Rush fee</td>
-                                <td>6</td>
-                                <td>$ 3.00</td>
-                                <td>$ 18.00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Total:</td>
-                                <td>6 items</td>
-                                <td>$ 99.00</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product Info -->
-        <div class="product-info">
-            <div class="block4-title">Product Info</div>
-            <div class="block4-body">
-                <div class="part-one">
-                    <h3>Internal Record on file</h3>
-                    <dl>
-                        <dt>Source of Goods:</dt>
-                        <dd>自制</dd>
+                    <h3>Accessories</h3>
+                    <dl data-popover-image="http://220.189.252.6:8012/sapPath/BSN4.5CM%E9%98%B2%E6%BB%91%E6%A9%A1%E7%AD%8B1.jpg">
+                        <dt>Waist:</dt>
+                        <dd>anti-slip elastic band/BSN SPORTS 45mm FSG</dd>
                     </dl>
-                    <dl>
-                        <dt>Special Price:</dt>
-                        <dd>否</dd>
+                    <dl data-popover-image="http://220.189.252.6:8012/sapPath/%E6%B0%B4%E6%B4%97%E5%94%9B.jpg">
+                        <dt>Waist:</dt>
+                        <dd>care label/FSG mexico FSG</dd>
                     </dl>
-                    <dl>
-                        <dt>Approval Method:</dt>
-                        <dd>小样照片</dd>
-                    </dl>
-                    <dl>
-                        <dt>Mock-Up & Typesetting:</dt>
-                        <dd>需套版和排版</dd>
-                    </dl>
-                    <dl>
-                        <dt>Payment Method:</dt>
-                        <dd>T/T</dd>
-                    </dl>
-                    <dl>
-                        <dt>Shipping Method:</dt>
-                        <dd>DHL</dd>
-                    </dl>
-                    <dl>
-                        <dt>Trade Policy:</dt>
-                        <dd>EXW FACTORY</dd>
-                    </dl>
-                    <dl>
-                        <dt>Need Sample Confirm:</dt>
-                        <dd>是</dd>
-                    </dl>
-                    <dl>
-                        <dt>Customer Barcode:</dt>
-                        <dd>否</dd>
-                    </dl>
-                </div>
-                <div class="part-two">
-                    <h3>Production Info</h3>
-                    <dl>
-                        <dt>Order Type:</dt>
-                        <dd>新单</dd>
-                    </dl>
-                    <dl>
-                        <dt>Line-Up Design:</dt>
-                        <dd>有拼花</dd>
-                    </dl>
-                    <dl>
-                        <dt>Rush Order:</dt>
-                        <dd>否</dd>
-                    </dl>
-                    <dl>
-                        <dt>Repeat Order No:</dt>
-                        <dd></dd>
-                    </dl>
-                    <dl>
-                        <dt>Related Order No:</dt>
-                        <dd></dd>
-                    </dl>
-                    <dl>
-                        <dt>Ref No:</dt>
-                        <dd></dd>
+                    <dl data-popover-image="http://220.189.252.6:8012/sapPath/BSN%E5%8C%85%E8%A3%85%E8%A2%8B.jpg">
+                        <dt>Center of back waist:</dt>
+                        <dd>woven label/BSN (S) BSN</dd>
                     </dl>
                 </div>
             </div>
@@ -583,44 +427,115 @@
         <div class="sample-approval">
             <div class="block4-title">Sample Approval</div>
             <div class="block4-body">
-                <ul>
-                    <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
-                        <div class="info">
-                            <textarea rows="4"></textarea>
-                            <div class="actions">
-                                <button class="am-btn am-btn-success">
-                                    <i class="am-icon-check"></i>Approve
-                                </button>
-                                <button class="am-btn am-btn-default">
-                                    <i class="am-icon-close"></i>Rejected
-                                </button>
+                <div class="part-left">
+                    <ul>
+                        <li>
+                            <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
+                            <div class="info">
+                                <textarea rows="4"></textarea>
+                                <div class="actions">
+                                    <button class="am-btn am-btn-success">
+                                        <i class="am-icon-check"></i>Approve
+                                    </button>
+                                    <button class="am-btn am-btn-default">
+                                        <i class="am-icon-close"></i>Rejected
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
-                        <div class="info">
-                            <div class="approve-time">
-                                <i class="am-icon-close"></i>&nbsp;Rejected 18-Apr-2019
+                        </li>
+                        <li>
+                            <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
+                            <div class="info">
+                                <div class="approve-time">
+                                    <i class="am-icon-close"></i>&nbsp;Rejected 18-Apr-2019
+                                </div>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
                             </div>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
-                        <div class="info">
-                            <div class="approve-time">
-                                <i class="am-icon-check"></i>&nbsp;Approved 18-Apr-2019
+                        </li>
+                        <li>
+                            <div class="thumb" style="background-image: url(img/info-4.png);" onclick="showDialog()"></div>
+                            <div class="info">
+                                <div class="approve-time">
+                                    <i class="am-icon-check"></i>&nbsp;Approved 18-Apr-2019
+                                </div>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
+                                Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
                             </div>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                            Customer comments: <span style="color:#0e90d2">the gold is too dark, please revise and make a new sample</span><br>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="part-right">
+                    <div class="part-one">
+                        <h3>Internal Record on file</h3>
+                        <dl>
+                            <dt>Source of Goods:</dt>
+                            <dd>自制</dd>
+                        </dl>
+                        <dl>
+                            <dt>Special Price:</dt>
+                            <dd>否</dd>
+                        </dl>
+                        <dl>
+                            <dt>Approval Method:</dt>
+                            <dd>小样照片</dd>
+                        </dl>
+                        <dl>
+                            <dt>Mock-Up & Typesetting:</dt>
+                            <dd>需套版和排版</dd>
+                        </dl>
+                        <dl>
+                            <dt>Payment Method:</dt>
+                            <dd>T/T</dd>
+                        </dl>
+                        <dl>
+                            <dt>Shipping Method:</dt>
+                            <dd>DHL</dd>
+                        </dl>
+                        <dl>
+                            <dt>Trade Policy:</dt>
+                            <dd>EXW FACTORY</dd>
+                        </dl>
+                        <dl>
+                            <dt>Need Sample Confirm:</dt>
+                            <dd>是</dd>
+                        </dl>
+                        <dl>
+                            <dt>Customer Barcode:</dt>
+                            <dd>否</dd>
+                        </dl>
+                    </div>
+                    <div class="part-two">
+                        <h3>Production Info</h3>
+                        <dl>
+                            <dt>Order Type:</dt>
+                            <dd>新单</dd>
+                        </dl>
+                        <dl>
+                            <dt>Line-Up Design:</dt>
+                            <dd>有拼花</dd>
+                        </dl>
+                        <dl>
+                            <dt>Rush Order:</dt>
+                            <dd>否</dd>
+                        </dl>
+                        <dl>
+                            <dt>Repeat Order No:</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>Related Order No:</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>Ref No:</dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -665,10 +580,17 @@
 <script src="js/jquery.min.js"></script>
 <script src="amaze-2.7.2/js/amazeui.min.js"></script>
 <script src="amaze-2.7.2/js/palette-color-picker.js"></script>
+<script src="popover/jquery.webui-popover.min.js"></script>
 <script src="amaze-2.7.2/js/app.js"></script>
 <script>
 function showDialog() {
     $('#approval-upload').modal()
 }
+$(document).ready(function($) {
+    $('[data-popover-image]').each(function() {
+        var html = '<div class="popover-image" style="background-image: url(' + $(this).attr('data-popover-image') + ');">'
+        WebuiPopovers.create(this, { type: 'html', title: '', content: html, trigger: 'hover', placement: 'bottom' });
+    })
+})
 </script>
 </html>
